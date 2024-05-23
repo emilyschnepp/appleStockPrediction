@@ -1,4 +1,4 @@
-<h4>🍏📈📉🍎 Apple Stock Prediction 🍏📈📉🍎 </h4>
+<h1>🍏📈📉🍎 Apple Stock Prediction 🍏📈📉🍎 </h1>
 <br>
 <br>
 <br>
@@ -12,7 +12,7 @@ The goal of this project is to evaluate several machine learning models to be us
 <br>
 <br>
 <br>
-<h3>Prerequisites</h3>
+<h2>Prerequisites</h2>
  <br>
 •	‘pandas’
 <br>
@@ -32,7 +32,7 @@ The goal of this project is to evaluate several machine learning models to be us
 <br>
 <br>
 <br>
-<h3>Data</h3>
+<h2>Data</h2>
 <br>
 Source: Kaggle (original source: Yahoo! Finance) https://www.kaggle.com/datasets/dilaraahan/apple-stock-prices
 <br>
@@ -40,7 +40,7 @@ Time Frame: Daily stock prices from 1980 to 2020
 <br>
 <br>
 <br>
-<h3>Data Preprocessing</h3>
+<h2>Data Preprocessing</h2>
 <br>
 There were no missing values in the dataset.
 <br>
@@ -52,21 +52,25 @@ The standard ‘Volume’ variable was skewed in the dataset. Creating ‘cubeRo
 <br>
 <br>
 <br>
-<h3>Exploratory Data Analysis</h3>
+<h2>Exploratory Data Analysis</h2>
+<br>
 <br>
 Apple stock prices were near zero until around 2007.
 <br>
+<br>
 An analysis of the average daily price from September to November 2007-2020 was conducted. This analysis, while not central to the project, provides insights into historical stock trends around iPhone announcements and launches.
 <br>
-(insert photo here)
+For a look at apple stock prices during typical iPhone announcement/release date cycle: (https://github.com/emilyschnepp/appleStockPrediction/blob/main/appleStockAvgDailyPrice(iPhone).png)
+<br>
 <br>
 As mentioned in the preprocessing section, ‘cubeRootVolume’ was created. The traditional ‘Volume’ metric was skewed and converting it to ‘cubeRootVolume’ gave it a more standard distribution.
 <br>
-(insert photo here)
+![For a look at Volume vs cubeRootVolume](https://github.com/emilyschnepp/appleStockPrediction/blob/main/appleStockVolume.png)
+
 <br>
 <br>
 <br>
-<h3>Models</h3>
+<h2>Models</h2>
 <br>
 LSTM (Long Short-Term Memory): Chosen to build two models, one where the future ‘Close’ price is predicted from the historic ‘Close’ price, and one where multiple variables are used to predict the future ‘Close’ price. LSTM is known for its ability to handle seasonality and trends, and is also known for its accuracy with time series forecasting.
 <br>
@@ -76,7 +80,7 @@ RidgeCV: Chosen to build a model where future ‘Close’ price is predicted fro
 <br>
 <br>
 <br>
-<h3>Evaluation Metrics</h3>
+<h2>Evaluation Metrics</h2>
 <br>
 The evaluation metrics used were:
 <br>
@@ -87,7 +91,7 @@ The evaluation metrics used were:
 •	R^2 (R Squared)
 <br>
 <br>
-<h2>Single Variable Metrics</h2>
+<h3>Single Variable Metrics</h3>
 <br>
 RidgeCV:
 <br>
@@ -120,7 +124,7 @@ Val R^2: 0.99
 <br>
 <br>
 <br>
-<h2>Multiple Variable Metrics</h2>
+<h3>Multiple Variable Metrics</h3>
 <br>
 LassoCV:
  <br>
@@ -162,13 +166,13 @@ Val R^2: 0.967
 <br>
 <br>
 <br>
-<h3>Findings</h3>
+<h2>Findings</h2>
 <br>
 The regression models (RidgeCV and LassoCV) far outperform LSTM in predicting stock prices. In the first set of models (single variable) the MSE and RMSE are lower in RidgeCV than in LSTM which indicates that RidgeCV is picking up more of the nuances in the data than LSTM. In the second set of models (multiple variables) the MSE and RMSE are both lower in LassoCV and the RMSE is higher with LassoCV. In short, this means that the LassoCV model makes better predictions than the LSTM model. 
 <br>
 <br>
 <br>
-<h3>Future Work</h3>
+<h2>Future Work</h2>
 <br>
 Incorporating data from industry competitors like Samsung or Google.
 <br>
@@ -176,6 +180,6 @@ Creating an ensemble method for improved predictions.
 <br>
 Creating a dashboard for the data in Tableau.
 <br>
-<h3>Acknowledgements</h3>
+<h2>Acknowledgements</h2>
 <br>
 OpenAI – for providing access to models like ChatGPT, which came to my aid in crafting this ReadMe. 
