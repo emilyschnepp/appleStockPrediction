@@ -58,15 +58,16 @@ The standard ‘Volume’ variable was skewed in the dataset. Creating ‘cubeRo
 Apple stock prices were near zero until around 2007.
 <br>
 <br>
-An analysis of the average daily price from September to November 2007-2020 was conducted. This analysis, while not central to the project, provides insights into historical stock trends around iPhone announcements and launches.
+An analysis of the average daily price from September to November 2007-2020 was conducted. Although this analysis is not central to the project, it provides insights into historical stock trends around iPhone announcements and launches. From this data we can see that Apple's stock prices are influenced by this cycle, and with few exceptions since 2008, have trended upward from September - November.
 <br>
-For a look at apple stock prices during typical iPhone announcement/release date cycle: (https://github.com/emilyschnepp/appleStockPrediction/blob/main/appleStockAvgDailyPrice(iPhone).png)
+
+([RidgeCV Learning Curve (Single Variable)](https://github.com/emilyschnepp/appleStockPrediction/blob/main/appleStockAvgDailyPrice(iPhone).png))
 <br>
 <br>
 As mentioned in the preprocessing section, ‘cubeRootVolume’ was created. The traditional ‘Volume’ metric was skewed and converting it to ‘cubeRootVolume’ gave it a more standard distribution.
 <br>
-![For a look at Volume vs cubeRootVolume](https://github.com/emilyschnepp/appleStockPrediction/blob/main/appleStockVolume.png)
-
+<br>
+([RidgeCV Learning Curve (Single Variable)](https://github.com/emilyschnepp/appleStockPrediction/blob/main/appleStockVolume.png))
 <br>
 <br>
 <br>
@@ -156,13 +157,13 @@ Val RMSE: 1.37
 Val R^2: 0.967
 <br>
  
-(insert learning curve 1)
+([RidgeCV Learning Curve (Single Variable)](https://github.com/emilyschnepp/appleStockPrediction/blob/main/appleRidgeCVClose.png))
 <br>
-(insert learning curve 2)
+([LSTM Learning Curve (Single Variable](https://github.com/emilyschnepp/appleStockPrediction/blob/main/appleLSTMClose.png))
 <br>
-(insert learning curve 3)
+([LassoCV Learning Curve (Multiple Variables)](https://github.com/emilyschnepp/appleStockPrediction/blob/main/appleLassoCVMultiVari.png))
 <br>
-(insert learning curve 4)
+([LSTM Learning Curve (Multiple Variables](https://github.com/emilyschnepp/appleStockPrediction/blob/main/appleLSTMMultiVari.png))
 <br>
 <br>
 <br>
