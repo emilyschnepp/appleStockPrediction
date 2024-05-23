@@ -49,7 +49,7 @@ The standard ‘Volume’ variable was skewed in the dataset. Creating ‘cubeRo
 <br>
 <br>
 <br>
-**Exploratory Data Analysis:**
+**Exploratory Data Analysis**
 <br>
 Apple stock prices were near zero until around 2007.
 <br>
@@ -63,7 +63,7 @@ As mentioned in the preprocessing section, ‘cubeRootVolume’ was created. The
 <br>
 <br>
 <br>
-**Models:**
+**Models**
 <br>
 LSTM (Long Short-Term Memory): Chosen to build two models, one where the future ‘Close’ price is predicted from the historic ‘Close’ price, and one where multiple variables are used to predict the future ‘Close’ price. LSTM is known for its ability to handle seasonality and trends, and is also known for its accuracy with time series forecasting.
 <br>
@@ -73,7 +73,7 @@ RidgeCV: Chosen to build a model where future ‘Close’ price is predicted fro
 <br>
 <br>
 <br>
-**Evaluation Metrics:**
+**Evaluation Metrics**
 <br>
 The evaluation metrics used were:
 <br>
