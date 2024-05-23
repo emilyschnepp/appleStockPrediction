@@ -1,15 +1,18 @@
-🍏📈📉🍎 **Apple Stock Prediction** 🍏📈📉🍎
+<h4>🍏📈📉🍎 Apple Stock Prediction 🍏📈📉🍎 </h4>
 <br>
 <br>
 <br>
 The goal of this project is to evaluate several machine learning models to be used in predicting future Apple stock prices. The algorithms/models to be employed are: 
+<br>
 •	LassoCV
+<br>
 •	LSTM
+<br>
 •	RidgeCV
 <br>
 <br>
 <br>
-**Prerequisites:**
+<h3>Prerequisites</h3>
  <br>
 •	‘pandas’
 <br>
@@ -29,15 +32,15 @@ The goal of this project is to evaluate several machine learning models to be us
 <br>
 <br>
 <br>
-**Data:**
+<h3>Data</h3>
 <br>
-- Source: Kaggle (original source: Yahoo! Finance) https://www.kaggle.com/datasets/dilaraahan/apple-stock-prices
+Source: Kaggle (original source: Yahoo! Finance) https://www.kaggle.com/datasets/dilaraahan/apple-stock-prices
 <br>
-- Time Frame: Daily stock prices from 1980 to 2020
+Time Frame: Daily stock prices from 1980 to 2020
 <br>
 <br>
 <br>
-**Data PreProcessing:**
+<h3>Data Preprocessing</h3>
 <br>
 There were no missing values in the dataset.
 <br>
@@ -49,7 +52,7 @@ The standard ‘Volume’ variable was skewed in the dataset. Creating ‘cubeRo
 <br>
 <br>
 <br>
-**Exploratory Data Analysis**
+<h3>Exploratory Data Analysis</h3>
 <br>
 Apple stock prices were near zero until around 2007.
 <br>
@@ -63,7 +66,7 @@ As mentioned in the preprocessing section, ‘cubeRootVolume’ was created. The
 <br>
 <br>
 <br>
-**Models**
+<h3>Models</h3>
 <br>
 LSTM (Long Short-Term Memory): Chosen to build two models, one where the future ‘Close’ price is predicted from the historic ‘Close’ price, and one where multiple variables are used to predict the future ‘Close’ price. LSTM is known for its ability to handle seasonality and trends, and is also known for its accuracy with time series forecasting.
 <br>
@@ -73,7 +76,7 @@ RidgeCV: Chosen to build a model where future ‘Close’ price is predicted fro
 <br>
 <br>
 <br>
-**Evaluation Metrics**
+<h3>Evaluation Metrics</h3>
 <br>
 The evaluation metrics used were:
 <br>
@@ -84,7 +87,7 @@ The evaluation metrics used were:
 •	R^2 (R Squared)
 <br>
 <br>
-Single Variable Metrics
+<h2>Single Variable Metrics</h2>
 <br>
 RidgeCV:
 <br>
@@ -117,7 +120,7 @@ Val R^2: 0.99
 <br>
 <br>
 <br>
-Multiple Variable Metrics
+<h2>Multiple Variable Metrics</h2>
 <br>
 LassoCV:
  <br>
@@ -159,13 +162,13 @@ Val R^2: 0.967
 <br>
 <br>
 <br>
-**Findings**
+<h3>Findings</h3>
 <br>
 The regression models (RidgeCV and LassoCV) far outperform LSTM in predicting stock prices. In the first set of models (single variable) the MSE and RMSE are lower in RidgeCV than in LSTM which indicates that RidgeCV is picking up more of the nuances in the data than LSTM. In the second set of models (multiple variables) the MSE and RMSE are both lower in LassoCV and the RMSE is higher with LassoCV. In short, this means that the LassoCV model makes better predictions than the LSTM model. 
 <br>
 <br>
 <br>
-**Future Work**
+<h3>Future Work</h3>
 <br>
 Incorporating data from industry competitors like Samsung or Google.
 <br>
@@ -173,6 +176,6 @@ Creating an ensemble method for improved predictions.
 <br>
 Creating a dashboard for the data in Tableau.
 <br>
-**Acknowledgements**
+<h3>Acknowledgements</h3>
 <br>
 OpenAI – for providing access to models like ChatGPT, which came to my aid in crafting this ReadMe. 
