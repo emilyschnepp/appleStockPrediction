@@ -1,4 +1,4 @@
-**## 🍏📈📉🍎 Apple Stock Prediction 🍏📈📉🍎 **
+##** 🍏📈📉🍎 Apple Stock Prediction 🍏📈📉🍎 **
 <br>
 <br>
 The goal of this project is to evaluate several machine learning models to be used in predicting future Apple stock prices. The algorithms/models to be employed are: 
