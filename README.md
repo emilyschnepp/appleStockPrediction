@@ -5,6 +5,13 @@
 The goal of this project is to evaluate LSTM models of varying complexities to find out which best predicts future Apple stock prices. 
 <br>
 An LSTM model was chosen for this task because of its known ability to work with time series data.
+<h2> How To Use </h2>
+<br>
+• PowerPoint: The resuts and visualizations are available in the attached PowerPoint file. This summarizes the key findings of the project.
+<br>
+• Jupyter Notebook: Download then load into environment such as Google Colab.
+<br>
+• Data: The datasets for this project are available to download directly from the links provided in the "Data Sources" section.
 <h2>Prerequisites</h2>
 •	‘pandas’
 <br>
