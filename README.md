@@ -1,8 +1,9 @@
 <h1>🍏📈📉🍎 Apple Stock Prediction 🍏📈📉🍎 </h1>
 <br>
-<br>
-<br>
+<h2>Introduction</h2>
 The goal of this project is to evaluate LSTM models of varying complexities to find out which best predicts future Apple stock prices. 
+<h5>Business Use Case:</h5>
+This project demonstrates how advanced models can support businesses in competitive industries by improving forecasting and market trend analysis.
 <br>
 An LSTM model was chosen for this task because of its known ability to work with time series data.
 <h2> How To Use </h2>
@@ -190,10 +191,13 @@ Line Graphs of Predicted vs Actual to display model performance over time.
 <h2>Findings</h2>
 While all models performed well in R^2 and validation metrics, there was overfitting present in Model 1 and Model 2. In Model 3 the overfitting was eliminated. It took longer for the model to converge in Model 3 due to the added complexity of adding Google variables, but this is what helped it to succeed in the long run. Adding Google variables definitely helped. 
 <h2>Future Work</h2>
-Incorporating more data for the same timeframe, like that of Apple competitor IBM or economic data. Incorporating more variables may further improve the model.
+<h5>Expanded Data Sources</h5>
+Integrating additional data sources, such as Google Trends and news sentiment analysis, to evaluate the impact of public perception on stock price movements. 
 <br>
-Creating a model using the stacked ensemble method for improved predictions. Models to be considered include: GRU, CNN-LSTM, MLP and XG Boost. Stacking models can improve overall accuracy and reduce errors.
+Include data from another major competitor, such as Samsung (despite being traded on the Korean stock exchange), to assess how international competition influences Apple's stock performance. 
+<h5>Advanced Model Techniques</h5>
+Develop a stacked ensemble method combining methods like GRU, CNN-LSTM, MLP, and XGBoost to improve accuracy and reduce errors.
 <br>
-Test models using walk forward cross validation for further evaluation. 
-<br>
-Applying a transformer model or bidirectional LSTM to this data could improve long-term forecasting.
+Explore the application of transformer models or bidirectional LSTMs for better long-term forecasting. 
+<h5>Evaluation Enhancements</h5>
+Implement walk-forward cross-validation to assess model performance over sequential time periods, providing a more robust evluation framework.
