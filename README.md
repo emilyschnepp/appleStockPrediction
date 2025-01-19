@@ -139,48 +139,48 @@ The evaluation metrics used were:
 <h2>Resulting Metrics</h2>
 LSTM Model 1 (Using historic Apple 'Close' price to predict future Apple 'Close' price):
 <br>
-TestMSE: 27.5028
+TestMSE: 23.285
 <br>
-TestRMSE: 5.2443
+TestRMSE: 4.825
 <br>
-Test R2: 0.9791
+Test R2: 0.982
 <br>
-Val MSE: 0.5961
+Val MSE: 0.202
 <br>
-Val RMSE: 0.7721
+Val RMSE: 0.450
 <br>
-Val R^2: 0.9854
+Val R^2: 0.995
 <br>
 <br>
 LSTM Model 2 (Using multiple Apple variables to predict future Apple 'Close' price):
 <br>
-TestMSE: 5.4115  
+TestMSE: 5.296  
 <br>
-TestRMSE: 2.3263
+TestRMSE: 2.301
 <br>
-Test R2: 0.9959
+Test R2: 0.996
 <br>
-Val MSE: 0.5664
+Val MSE: 0.176
 <br>
-Val RMSE: 0.7526
+Val RMSE: 0.419
 <br>
-Val R^2: 0.9861
+Val R^2: 0.996
 <br>
 <br>
 <br>
 LSTM Model 3 (Using Apple and Google variables to predict future Apple 'Close' price):
  <br>
-TestMSE: 0.2274
+TestMSE: 0.316
 <br>
-TestRMSE: 0.4769
+TestRMSE: 0.562
 <br>
-Test R2: 0.9829
+Test R2: 0.976
 <br>
-Val MSE: 0.0028
+Val MSE: 0.003
 <br>
-Val RMSE: 0.0532
+Val RMSE: 0.056
 <br>
-Val R^2: 0.9931 
+Val R^2: 0.992 
 <h2>Visualizations</h2>
 Line Graph of Apple and Google stock prices to understand the data used.
 <br>
